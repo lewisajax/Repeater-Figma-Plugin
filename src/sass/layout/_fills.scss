@@ -1,0 +1,26 @@
+.fills {
+
+    &__colour {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        &--small {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &__input {
+
+        & .input__action {
+            padding: .5rem 0;
+        }
+
+        &--small {
+
+            & .input__action {
+                padding: .3rem 0;
+            }
+        }
+    }
+}

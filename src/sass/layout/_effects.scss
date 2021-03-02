@@ -1,0 +1,19 @@
+.effects {
+
+    &__shadow {
+
+        &--labels {
+            margin: 1.8rem 0 .4rem;
+
+            & label:not(:last-of-type) {
+                padding-left: .6rem;
+            }
+        }
+    }
+
+    &__full-input {
+        & .input__wrapper--item {
+            width: 100%;
+        }
+    }
+}

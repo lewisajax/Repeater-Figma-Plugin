@@ -1,0 +1,34 @@
+.colour {
+
+    &__background-primary {
+        background-color: var(--background-primary);
+
+        &--text {
+            color: var(--background-primary);
+        }
+    }
+    
+    &__background-secondary {
+        background-color: var(--background-secondary);
+
+        &--text {
+            color: var(--background-secondary);
+        }
+    }
+
+    &__font-primary {
+        color: var(--font-primary);
+        
+        &--background {
+            background-color: var(--font-primary);
+        }
+    }
+    
+    &__font-secondary {
+        color: var(--font-secondary);
+        
+        &--background {
+            background-color: var(--font-secondary);
+        }
+    }
+}

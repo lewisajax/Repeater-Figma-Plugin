@@ -1,0 +1,27 @@
+.font {
+
+    &__head {
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        &--sub {
+            font-size: 1.4rem;
+            font-weight: 500;    
+        }
+
+        &--light {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+
+    &__para {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    &__tag {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}

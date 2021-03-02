@@ -1,0 +1,114 @@
+<div id="overlayWrapper">
+  <div class="overlay" id="overlayID">
+    <div class="overlay__center">
+      <p class="overlay__text font__para colour__font-primary" id="overlayMessage">Please select an object on the viewport</p>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="containerWrapper">
+  <section class="selected">
+      <label class="selected__label" for="nodeSelect">
+          <div class="selected__wrapper">
+              <svg class="icon selected__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33329 0.416656V2.49999H6.66663V0.416656H7.49996V2.49999H9.58329V3.33332H7.49996V6.66666H9.58329V7.49999H7.49996V9.58332H6.66663V7.49999H3.33329V9.58332H2.49996V7.49999H0.416626V6.66666H2.49996V3.33332H0.416626V2.49999H2.49996V0.416656H3.33329ZM6.66663 6.66666V3.33332H3.33329V6.66666H6.66663Z" fill="#999999"/>
+              </svg>
+              <select class="selected__list font__para" id="nodeSelect">
+                <!-- The options get injected here -->
+              </select>
+          </div>
+      </label>
+  </section>
+
+  <div id="viewWrapper">
+    <!-- Where all the other stuff gets injected -->
+  </div>
+
+  <div class="breakpoints" id="breakpointWrapper">
+      <div class="breakpoints__head props__container">
+          <h2 class="font__para colour__background-primary--text" id="breakpointName">Breakpoints</h2>
+      </div>
+      <div class="props__container props__col--1">
+          <div class="input input--single">
+              <label for="value" class="input__label">
+                  <div class="input__wrapper input__wrapper--light">
+                      <p class="input__icon font__para colour__font-secondary">Value</p>
+                      <div class="input__wrapper--item">
+                        <input type="text" class="input__action font__para colour__background-primary--text" id="breakpointInput" value="0">
+                      </div>
+                  </div>
+              </label>
+          </div>
+      </div>
+      <div class="props__container props__col--1">
+          <div class="breakpoints__options">
+              <div class="breakpoints__methods">
+                  <div class="breakpoints__radio">
+                      <input type="radio" name="method" id="breakpointLoop" value="loop" checked>
+                      <label class="breakpoints__label" for="breakpointLoop">
+                          <div class="breakpoints__custom-input">
+                              <div>&nbsp;</div>
+                          </div>
+                          <p class="font__para colour__background-primary--text">Loop</p>
+                      </label>
+                  </div>
+                  <div class="breakpoints__radio">
+                      <input type="radio" name="method" id="breakpointHold" value="hold">
+                      <label class="breakpoints__label" for="breakpointHold">
+                          <div class="breakpoints__custom-input">
+                              <div>&nbsp;</div>
+                          </div>
+                          <p class="font__para colour__background-primary--text">Hold</p>
+                      </label>
+                  </div>
+                  <div class="breakpoints__radio">
+                      <input type="radio" name="method" id="breakpointReverse" value="reverse">
+                      <label class="breakpoints__label" for="breakpointReverse">
+                          <div class="breakpoints__custom-input">
+                              <div>&nbsp;</div>
+                          </div>
+                          <p class="font__para colour__background-primary--text">Reverse</p>
+                      </label>
+                  </div>
+              </div>
+              <div class="breakpoints__range">
+                  <div class="input input--single">
+                      <label for="breakpointMax" class="input__label">
+                          <div class="input__wrapper input__wrapper--light">
+                              <p class="input__icon font__para colour__font-secondary">Max</p>
+                              <div class="input__wrapper--item">
+                                <input type="text" class="input__action font__para colour__background-primary--text" id="breakpointMax" value="0">
+                              </div>
+                          </div>
+                      </label>
+                  </div>
+                  <div class="input input--single">
+                      <label for="breakpointMin" class="input__label">
+                          <div class="input__wrapper input__wrapper--light">
+                              <p class="input__icon font__para colour__font-secondary">Min</p>
+                              <div class="input__wrapper--item">
+                                <input type="text" class="input__action font__para colour__background-primary--text" id="breakpointMin" value="0">
+                              </div>
+                          </div>
+                      </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <section class="props__container props">
+    <div class="additions">
+      <h2 class="font__sub-head additions__header colour__font-primary">Additions</h2>
+      <div class="additions__container">
+        <input type="number" min="1" max="200" value="20" class="additions__input font__para" id="additionsInput">
+        <div class="additions__grounds">
+          <!-- I haven't added directions correctly yet -->
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button class="btn__apply" id="applyBtn"><p class="btn__apply__text">Apply</p></button>
+</div>

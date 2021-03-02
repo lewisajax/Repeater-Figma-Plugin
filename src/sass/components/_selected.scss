@@ -1,0 +1,28 @@
+.selected {
+
+    &__wrapper {        
+        display: flex;
+        align-items: center;
+        padding: 1.2rem 1.2rem 1.2rem 2rem;
+    }
+
+    &__label {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    &__icon {
+        margin-right: 1.2rem;
+    }
+
+    &__list {
+        width: 100%;
+        font-family: inherit;
+        outline: none;
+
+        &:focus {
+            outline: 2px solid var(--outline);
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.input {
+    margin-bottom: 1.2rem;
+
+    &--small {
+        margin-bottom: .4rem;
+    }
+
+    &--multiple {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    &__label {      
+
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // height: 100%;
+        padding-left: .6rem;
+
+        &--dark {
+            &:hover {
+                outline: 1px solid rgba(0, 0, 0, 0.1);
+                cursor: text;
+                
+                & .input__wrapper--item:not(:last-of-type) {
+                //   border-right: 1px solid rgba(0, 0, 0, 0.1);
+                  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1);
+                }
+                
+                & .input__wrapper--icon:not(:last-of-type) {
+                //   border-right: 1px solid rgba(0, 0, 0, 0.1);
+                  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1);
+                }
+            }
+    
+            &:focus-within {
+                outline: 2px solid var(--outline);
+    
+                & .input__wrapper--item:not(:last-of-type) {
+                    //   border-right: 1px solid rgba(0, 0, 0, 0.1);
+                      box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1);
+                }
+                
+                & .input__wrapper--icon:not(:last-of-type) {
+                    //   border-right: 1px solid rgba(0, 0, 0, 0.1);
+                      box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
+        &--light {
+
+            &:hover {
+                outline: 1px solid rgba(255, 255, 255, .5);
+                cursor: text;
+                
+                & .input__wrapper--item:not(:last-of-type) {
+                //   border-right: 1px solid rgba(0, 0, 0, 0.1);
+                  box-shadow: 1px 0 0 rgba(255, 255, 255, .5);
+                }
+                
+                & .input__wrapper--icon:not(:last-of-type) {
+                //   border-right: 1px solid rgba(0, 0, 0, 0.1);
+                  box-shadow: 1px 0 0 rgba(255, 255, 255, .5);
+                }
+            }
+    
+            &:focus-within {
+                outline: 2px solid var(--outline);
+    
+                & .input__wrapper--item:not(:last-of-type) {
+                    //   border-right: 1px solid rgba(0, 0, 0, 0.1);
+                      box-shadow: 1px 0 0 rgba(255, 255, 255, .5);
+                }
+                
+                & .input__wrapper--icon:not(:last-of-type) {
+                    //   border-right: 1px solid rgba(0, 0, 0, 0.1);
+                      box-shadow: 1px 0 0 rgba(255, 255, 255, .5);
+                }
+            }
+        }
+
+        &--item {
+            height: 100%;
+            padding: .6rem 0;
+            margin-left: .6rem;
+            padding-right: .4rem;
+        }
+
+        &--icon {
+            height: 100%;
+
+            padding: .6rem .6rem .6rem 0;
+        }
+    }
+
+    &__icon {
+
+    }
+
+    &__action {
+        width: 100%;
+        height: 100%;
+        // font-size: inherit;
+        font-family: inherit;
+        text-align: right;
+
+        // -webkit-user-select: all;
+        // user-select: all;    
+
+        &:focus {
+            outline: none;
+            // animation: selection 100ms step-end forwards;
+        }
+        
+        // https://codersblock.com/blog/using-css-to-control-text-selection/
+        // @keyframes selection {
+        //     to {
+        //       -webkit-user-select: text;
+        //       user-select: text;
+        //     }
+        // }
+    }
+}

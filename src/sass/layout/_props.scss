@@ -1,0 +1,62 @@
+.props {
+    border-top: 1px solid var(--background-secondary);
+    padding: 1.6rem 0 2rem;
+
+    &__container {
+        margin: 0 1.4rem;
+
+        &--sub {
+            margin-top: 1.2rem;
+            margin-bottom: 1.2rem;
+            padding: 1.2rem 1rem .6rem;
+            box-shadow: -1px 0 0 rgba(0, 0, 0, .1) inset,
+                         1px 0 0 rgba(0, 0, 0, .1) inset,
+                         0 -1px 0 rgba(0, 0, 0, .1) inset,
+                         0 1px 0 rgba(0, 0, 0, .1) inset;
+        }
+    }
+
+    &__sub {
+
+        &--options {
+            margin-top: 1.4rem;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // width: 100%;
+        padding-left: .6rem;
+        margin-bottom: 1.4rem;
+    }
+
+    &--align {
+        display: flex;
+        align-items: center;
+        margin-top: 1.2rem;
+    }
+
+    &__row {
+        row-gap: 1.2rem;
+    }
+
+    &__col--1 {
+        
+    }
+
+    &__col--2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 3.6rem;
+    }
+
+    &__col--3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        column-gap: 2.4rem;
+    }
+}
